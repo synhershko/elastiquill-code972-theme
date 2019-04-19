@@ -612,3 +612,13 @@ article.post {
 .boxed {
     background-color: #fff;
 }
+
+article.post h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+div.reading-time {
+    color: #777;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
