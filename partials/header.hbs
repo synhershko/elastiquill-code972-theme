@@ -1,0 +1,73 @@
+{{#if headerImageUrl}}
+<header id="header" class="hidden-xs" style="background-image: url({{#if headerImageUrl}}{{headerImageUrl}}{{else}}https://code972.com/content/images/header.jpg{{/if}});">
+{{else}}
+<header id="header" class="hidden-xs">
+{{/if}}
+  <div class="container">
+    <div id="header-title">
+      <h1><a href="/">Code <span>972</span></a>
+      </h1>
+      <p>A blog about BigData, Cloud and Search technologies<br> by <a href="/about" id="header-about-link">Itamar Syn-Hershko</a></p>
+    </div>
+    <div id="search-header" class="hidden-xs">
+      <!--<div class="input-group">
+        <input type="text" class="form-control" placeholder="Search...">
+        <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+      </div><br/>-->
+      <p>
+        <a href="https://mvp.microsoft.com/en-us/PublicProfile/5000869" target="_blank"><img src="/static/theme/images/microsoft-mvp.png" title="Microsoft MVP since 2014" width="150"></a>
+      </p>
+      <br>
+      <p>
+        <a href="/elasticsearch-consulting-and-development-services"><img src="/static/theme/images/elastic-logo-H-full-color-reverse.png" width="150" title="Elasticsearch Consulting Partner"></a>
+        <br>
+        <a href="/elasticsearch-consulting-and-development-services">Partner</a>
+      </p>
+    </div>
+  </div>
+  <nav class="navbar navbar-static-top navbar-mind" role="navigation" id="nav-affix">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand visible-xs" href="/">Code <span>972</span></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-mind-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-bars fa-inverse"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse navbar-mind-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="/blog">Blog</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/hebmorph">HebMorph - Hebrew Search</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshops <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://bigdataboutique.co.il/courses/elasticsearch-for-developers" target="_blank">Elasticsearch for Developers</a></li>
+              <li><a href="http://bigdataboutique.co.il/courses/maintaining-elasticsearch-in-production" target="_blank">Maintaining Elasticsearch in Production</a></li>
+              <li><a href="http://bigdataboutique.co.il/courses/" target="_blank">Courses on BigData and Cloud technologies</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/elasticsearch-consulting-and-development-services">Elasticsearch consultant</a>
+          </li>
+          <li>
+            <a href="/about">About me</a>
+          </li>
+        </ul> <!-- nav nabvar-nav -->
+        <ul class="nav navbar-nav navbar-right" id="social-nav">
+          <li><a href="/contact" title="My Email: itamar at this domain"><i class="fa fa-envelope-o"></i></a></li>
+          <li><a class="twitter" href="http://www.linkedin.com/pub/itamar-syn-hershko/13/250/78b" title="LinkedIn"><i class="fa fa-linkedin fa-lg"></i></a></li>
+          <li><a class="twitter" href="http://twitter.com/synhershko" title="Twitter"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a class="github" href="https://github.com/synhershko" title="GitHub"><i class="fa fa-github fa-lg"></i></a></li>
+          <li><a class="rss" href="http://code972.com/blog/rss" title="RSS"><i class="fa fa-rss fa-lg"></i></a></li>
+        </ul>
+      </div><!-- navbar-collapse -->
+    </div> <!-- container -->
+  </nav> <!-- navbar navbar-default -->
+</header>

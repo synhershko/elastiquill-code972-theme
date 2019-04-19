@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src https: 'unsafe-inline'">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {{#if title}}
+  <title>{{title}}</title>
+  {{else}}
+  <title>Code972 :: A blog about BigData, Cloud and Search technologies by Itamar Syn-Hershko</title>
+  {{/if}}  
+
+  {{#if description}}
+  <meta name="Description" content="{{description}}">
+  {{else}}
+  <meta name="Description" content="A blog about BigData, Cloud and Search technologies by Itamar Syn-Hershko">
+  {{/if}}
+
+
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link id="AtomLink" title="RSS" type="application/rss+xml" rel="alternate" href="/blog/rss">
+
+  <link href="/static/theme/stylesheets/openmind.css" rel="stylesheet" media="screen">
+  <link href="/static/theme/stylesheets/style.css" rel="stylesheet" media="screen">
+  <script src="https://www.google.com/recaptcha/api.js" crossorigin="anonymous" async defer></script>  
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="boxed animated fadeIn animation-delay-5">
+    {{> header}}
+    <div class="container">
+      <div class="row">
+        <main class="col-md-8">
+          {{{body}}}
+        </main>
+        <aside class="col-md-4" id="sidebar">
+          {{> sidebar}}
+        </aside>
+      </div>
+    </div>
+    <aside id="footer-widgets">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="footer-widget-title">Sitemap</h3>
+            <ul class="list-unstyled three_cols">
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-widget">
+              <h3 class="footer-widget-title">Recent Posts</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-widget">
+              <h3 class="footer-widget-title">Projects</h3>
+              <div class="row">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer id="footer">
+      <p>© 2016-2018 <a href="#">Itamar Syn-Hershko</a>. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" crossorigin="anonymous"></script>  
+</body>
+</html>
