@@ -535,8 +535,6 @@ blockquote {
   text-align: justify;
   
   border: 0;
-  border-left: 15px solid #c76c0c;
-  border-right: 2px solid #c76c0c;
   
   /*Box Shadow */
   -moz-box-shadow: 2px 2px 15px #ccc;
