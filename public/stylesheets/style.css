@@ -518,7 +518,12 @@ a.social-icon:hover {
 #content-page p, #content-page li { font-size: 16px; }
 #sidebar h2{ color: black;}
 article > h1 { padding-top: 20px; }
-.post-title { margin-top: 20px;margin-bottom: 10px; border: 0; }
+.post-title {
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    font-size: 24px !important;
+    border: 0;
+}
 
 blockquote {
   display:block;
@@ -619,4 +624,7 @@ div.reading-time {
     color: #777;
     margin-top: 0;
     margin-bottom: 20px;
+}
+article img {
+  width: 100%;
 }
