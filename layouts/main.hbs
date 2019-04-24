@@ -48,6 +48,13 @@
   <div class="boxed animated fadeIn animation-delay-5">
     {{> header}}
     <div class="container">
+    {{#if isContentPage}}
+    <div class="row">
+      <main class="col-md-12">
+        {{{body}}}
+      </main>
+    </div>
+    {{else}}
       <div class="row">
         <main class="col-md-8">
           {{{body}}}
@@ -56,6 +63,7 @@
           {{> sidebar}}
         </aside>
       </div>
+    {{/if}}
     </div>
     <footer id="footer">
       <p>© 2016-2019 <a href="#">Itamar Syn-Hershko</a>. All rights reserved. Powered by <a href="https://github.com/BigDataBoutique/ElastiQuill">ElastiQuill</a>.</p>
