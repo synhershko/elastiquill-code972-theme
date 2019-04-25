@@ -644,3 +644,7 @@ article.search-result .ellipsis:after {
     margin-left: -0.2rem;
     content: '... ';
 }
+
+article .icon-item i {
+    font-size: 1.5em;
+}
