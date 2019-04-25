@@ -625,6 +625,22 @@ div.reading-time {
     margin-top: 0;
     margin-bottom: 20px;
 }
+
+em.search-highlight {
+  font-style: normal;
+  font-weight: bold;
+  background-color: yellow;
+}
+
 article img {
-  width: 100%;
+    width: 100%;
+}
+
+article.search-result p {
+    display: inline;
+}
+
+article.search-result .ellipsis:after {
+    margin-left: -0.2rem;
+    content: '... ';
 }
