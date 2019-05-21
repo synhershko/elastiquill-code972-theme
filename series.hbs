@@ -1,0 +1,9 @@
+<header class="page-title">
+{{#if tagDescription}}
+  <h1 class="content-title">{{tagDescription.title}}<h1/>
+  <p>{{{tagDescription.content}}}<p/>
+{{/if}}
+</header>
+{{#each posts}}
+{{> post this}}
+{{/each}}
