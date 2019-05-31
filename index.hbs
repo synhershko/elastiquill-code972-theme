@@ -6,8 +6,8 @@
     Showing {{posts.length}} posts out of {{total}} total, page {{pageNum}}
   </p>
   <p class="blog-pagination">
-    {{#if prevPage}}<a href="/blog/page/{{prevPage}}">Previous page</a>{{/if}}
-    {{#if nextPage}}<a href="/blog/page/{{nextPage}}">Next page</a>{{/if}}
+    {{#if prevPage}}<a href="{{blogRoutePrefix}}/page/{{prevPage}}">Previous page</a>{{/if}}
+    {{#if nextPage}}<a href="{{blogRoutePrefix}}/page/{{nextPage}}">Next page</a>{{/if}}
   </p>
 {{else}}
   {{> no-content}}

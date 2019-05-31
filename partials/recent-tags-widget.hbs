@@ -24,7 +24,7 @@
             <h3>Tags</h3>
             <div class="tags-cloud">
                 {{#each sidebarWidgetData.allTags}}
-                <a href="/blog/tagged/{{this.key}}" class="tag">{{this.key}} ({{this.doc_count}})</a>
+                <a href="{{this.url}}" class="tag">{{this.key}} ({{this.doc_count}})</a>
                 {{/each}}
             </div>
         </div>
