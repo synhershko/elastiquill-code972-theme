@@ -9,7 +9,11 @@
   {{/if}}  
   <div class="row">
     <div class="col-lg-12">
-      {{{truncateHtml this.content 1100}}}
+      {{#if (eq this.post_index 0)}}
+        {{{truncateHtml this.content 1100}}}
+      {{else}}
+        {{{truncateHtml this.content 300}}}
+      {{/if}}
     </div>
   </div>
   <div class="panel-footer">
@@ -17,9 +21,6 @@
       <div class="col-lg-9 col-md-9 col-sm-8">
         <span class="date">
           <time datetime="{{this.published_at}}">{{this.published_at_str}}</time>
-        </span>
-        <span class="comments">
-          <a href="{{this.url}}#comments">{{#if this.comments_count}}Comments ({{ this.comments_count }}){{else}}No Comments{{/if}}</a>
         </span>
         <br>
         {{> tags tags=this.tags}}
