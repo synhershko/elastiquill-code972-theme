@@ -405,6 +405,12 @@ a.social-icon:hover {
             color: #666;
         }
 
+.cross-post {
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
 .date,
 .tags,
 .comments,
