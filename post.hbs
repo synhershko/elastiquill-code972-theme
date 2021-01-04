@@ -14,8 +14,8 @@
         </div>
         {{/if}}
     </div>
-    {{#if canonicalUrl}}
-        <i class="cross-post">(Cross-posted from <a href="{{canonicalUrl}}">BigData Boutique Blog</a>)</i>
+    {{#if post.metadata.canonical_url}}
+        <i class="cross-post">(Cross-posted from <a href="{{post.metadata.canonical_url}}">BigData Boutique Blog</a>)</i>
     {{/if}}
     {{# if post.series}}
     <p>
