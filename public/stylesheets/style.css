@@ -670,3 +670,35 @@ article .icon-item i {
     color: #333;
     -webkit-text-stroke: .007em;
 }
+
+article h1:has(a),
+article h2:has(a),
+article h3:has(a),
+article h4:has(a),
+article h5:has(a),
+article h6:has(a) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+article h1 a:has(i),
+article h2 a:has(i),
+article h3 a:has(i),
+article h4 a:has(i),
+article h5 a:has(i),
+article h6 a:has(i) {
+    margin-top: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+article h1:hover a:has(i),
+article h2:hover a:has(i),
+article h3:hover a:has(i),
+article h4:hover a:has(i),
+article h5:hover a:has(i),
+article h6:hover a:has(i) {
+    opacity: 1;
+}
